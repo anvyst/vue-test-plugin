@@ -1,11 +1,11 @@
 const { resolve, join } = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'development',
   output: {
     path: resolve(__dirname, '../dist'),
-    // filename: `${filename}.common.js`
   },
   entry: './src/index.js',
   module: {
@@ -22,7 +22,9 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'vue-style-loader',
+          process.env.NODE_ENV !== 'production'
+            ? 'vue-style-loader'
+            : MiniCssExtractPlugin.loader,
           'css-loader'
         ]
       }
@@ -35,6 +37,9 @@ module.exports = {
     }
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    })
   ]
 }
