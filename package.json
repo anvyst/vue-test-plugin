@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "VueJS Plugin Template",
   "main": "index.js",
-  "repository": "git@github.com:anvyst/vue-plugin-template.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/anvyst/vue-plugin-template.git"
+  },
   "author": "andrey@7winds.tech",
   "license": "MIT",
   "scripts": {
@@ -48,5 +51,19 @@
     "webpack-dashboard": "^3.0.0",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.2.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/anvyst/vue-plugin-template/issues"
+  },
+  "homepage": "https://github.com/anvyst/vue-plugin-template#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "plugin",
+    "template",
+    "plugin-template"
+  ]
 }
