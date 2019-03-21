@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    Hello, world!
     <h3 class="hi">{{ message }}</h3>
   </div>
 </template>
@@ -9,7 +8,7 @@
 export default {
   data () {
     return {
-      message: 'Hello, again!'
+      message: 'Hello world'
     }
   }
 }
@@ -17,6 +16,6 @@ export default {
 
 <style>
   .hi {
-    color: red;
+    color: green;
   }
 </style>
