@@ -11,7 +11,5 @@ module.exports = merge(base, {
     libraryTarget: 'umd',
     libraryExport: 'default'
   },
-  resolve: {
-    symlinks: false
-  }
+
 })
