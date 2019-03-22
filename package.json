@@ -2,7 +2,7 @@
   "name": "@anvyst/vue-plugin-template",
   "version": "0.1.0",
   "description": "VueJS Plugin Template",
-  "main": "./src/index.js",
+  "main": "./dist/app.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/anvyst/vue-plugin-template.git"
