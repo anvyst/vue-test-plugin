@@ -1,14 +1,23 @@
-import Hello from '@/Hello.vue'
+import Hello from './Hello.vue'
+import Bye from './Bye.vue'
 
-const TestComponent = {
+const TestPlugin = {
+  install,
   Hello,
-  install: function(Vue) {
-    Vue.component(Hello.name, Hello)
-  }
+  Bye
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(TestComponent)
+  window.Vue.use(install)
 }
 
-export default TestComponent
+export default TestPlugin
+
+function install (Vue) {
+  if (install.installed) {
+    return
+  }
+
+  Vue.component(Hello.name, Hello)
+  Vue.component(Bye.name, Bye)
+}
