@@ -1,17 +1,12 @@
 import Hello from './Hello.vue'
 
-function plugin (Vue) {
-  Vue.component('hello', Hello)
+let TestPlugin = {}
+TestPlugin.install = function (Vue, options) {
+  Vue.component('hello-component', Hello)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(plugin)
+  window.Vue.use(TestPlugin)
 }
 
-export default plugin
-const version = '__VERSION__'
-
-export {
-  Hello,
-  version
-}
+export default TestPlugin

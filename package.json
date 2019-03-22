@@ -1,11 +1,11 @@
 {
-  "name": "@anvyst/vue-plugin-template",
+  "name": "@anvyst/vue-test-plugin",
   "version": "0.1.0",
-  "description": "VueJS Plugin Template",
+  "description": "VueJS Test Plugin",
   "main": "./dist/app.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/anvyst/vue-plugin-template.git"
+    "url": "git+ssh://git@github.com/anvyst/vue-test-plugin.git"
   },
   "author": "andrey@7winds.tech",
   "license": "MIT",
@@ -56,9 +56,9 @@
     "webpack-merge": "^4.2.1"
   },
   "bugs": {
-    "url": "https://github.com/anvyst/vue-plugin-template/issues"
+    "url": "https://github.com/anvyst/vue-test-plugin/issues"
   },
-  "homepage": "https://github.com/anvyst/vue-plugin-template#readme",
+  "homepage": "https://github.com/anvyst/vue-test-plugin#readme",
   "directories": {
     "test": "tests"
   },
